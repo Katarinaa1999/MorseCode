@@ -11,7 +11,7 @@ public class MorseCodeTest {
     public void testEnglishToMorse() {
     assertEquals(".-", MorseCodeConverter.englishToMorse("A"));
     assertEquals("-...", MorseCodeConverter.englishToMorse("B"));
-    assertEquals(".... . .-.. .-.. ---", MorseCodeConverter.englishToMorse("H E L L O"));
+    assertEquals(".... . .-.. .-.. ---", MorseCodeConverter.englishToMorse("HELLO"));
     }
 
     //TestCase for converting valid Morse code to English text
@@ -19,7 +19,8 @@ public class MorseCodeTest {
     public void testMorseToEnglish() {
         assertEquals("A", MorseCodeConverter.morseToEnglish(".-"));
         assertEquals("B", MorseCodeConverter.morseToEnglish("-..."));
-        assertEquals("H E L L O", MorseCodeConverter.morseToEnglish(".... . .-.. .-.. ---"));
+        assertEquals("HELLO", MorseCodeConverter.morseToEnglish(".... . .-.. .-.. ---"));
+        assertEquals("HELLO WORLD", MorseCodeConverter.morseToEnglish(".... . .-.. .-.. ---  .-- --- .-. .-.. -.."));
     }
 
     //TestCase for invalid English input

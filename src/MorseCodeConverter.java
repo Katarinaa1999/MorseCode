@@ -73,7 +73,7 @@ public class MorseCodeConverter {
     public static String morseToEnglish(String morse) {
         StringBuilder englishText =  new StringBuilder();    // storing the result in English
         try {
-            String[] morseWords = morse.split(" "); // separating Morse code into wprds by spacing
+            String[] morseWords = morse.split("  "); // separating Morse code into wprds by spacing
             for (String word : morseWords) {
                 String[] morseLetters = word.split(" ");    //spliting each word into Morse letters
                 for (String letter : morseLetters) {
